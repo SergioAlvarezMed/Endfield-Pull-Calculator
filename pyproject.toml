@@ -1,0 +1,9 @@
+[project]
+name = "pycharmprojeendfield-pity-system"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.13"
+dependencies = [
+    "bashplotlib>=0.6.5",
+    "uniplot>=0.21.5",
+]

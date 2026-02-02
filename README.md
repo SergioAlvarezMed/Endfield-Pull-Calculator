@@ -2,12 +2,29 @@
 
 A command-line tool to calculate probabilities and track pity counters for the gacha system in **Arknights: Endfield**.
 
-## Features
+## ✨ Features (v0.2.0 - Refactored with DDD Architecture)
 
-- 📊 View base rates and pity system explanation
-- 🎯 Calculate your current pity state (all counters)
-- 📈 Calculate 6★ probability for upcoming pulls
-- 🎲 Simulate 50/50 results
+- 📊 **View base rates** and pity system explanation
+- 🎯 **Calculate your current pity state** (all counters)
+- 📈 **Calculate 6★ probability** for upcoming pulls
+- 🎲 **Simulate 50/50 results**
+- 💾 **Auto-save state** (persists between sessions)
+- 📋 **View detailed probability tables**
+- 🧪 **Well-tested** (>80% coverage, 32 tests)
+- 🏗️ **Clean Architecture** (Domain-Driven Design)
+
+## 🏗️ New Architecture (v0.2.0)
+
+Completely refactored using **Domain-Driven Design** principles:
+
+```
+src/
+├── domain/         # Business logic (entities, value objects, services)
+├── application/    # Use cases and ports
+└── infrastructure/ # CLI, persistence, presentation
+```
+
+**See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) for detailed documentation with diagrams.**
 - 💎 Calculate pulls needed for featured guarantee
 - 📋 View detailed soft pity probability table
 - 📋 View featured 6★ probability table (phases 1 & 2)

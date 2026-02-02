@@ -1,9 +1,18 @@
 [project]
 name = "pycharmprojeendfield-pity-system"
-version = "0.1.0"
-description = "Add your description here"
+version = "0.2.0"
+description = "Arknights: Endfield pity calculator with DDD architecture"
 requires-python = ">=3.13"
 dependencies = [
     "bashplotlib>=0.6.5",
     "uniplot>=0.21.5",
+    "pydantic>=2.6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "hypothesis>=6.98.0",
 ]
